@@ -151,3 +151,12 @@ def delete_candidate(id):
   conn.commit()
   conn.close
 
+def delete_user(id):
+  conn = sqlite3.connect(db_path)
+  cursor = conn.cursor()
+
+  cursor.execute('DELETE FROM users WHERE userId = ?', (id,))
+
+  conn.commit()
+  conn.close
+
