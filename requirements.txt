@@ -1,0 +1,5 @@
+CTkMessagebox
+customtkinter
+matplotlib
+Pillow
+bcrypt
